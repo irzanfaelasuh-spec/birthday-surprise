@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#08051a">
+  <title>Untukmu — Selamat Ulang Tahun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stars"></div>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+  <div class="vignette"></div>
+
+  <main class="scene">
+    <section id="intro" class="screen active">
+      <div class="eyebrow">✦ A LITTLE SURPRISE ✦</div>
+      <h1>Happy<br><span>Birthday</span></h1>
+      <p class="subtitle">Ada sesuatu yang ingin aku berikan untukmu.</p>
+
+      <div class="cake-wrap" id="cake" role="button" tabindex="0" aria-label="Klik kue">
+        <div class="cake-glow"></div>
+        <div class="cake">
+          <div class="candle c1"><i></i></div>
+          <div class="candle c2"><i></i></div>
+          <div class="candle c3"><i></i></div>
+          <div class="icing"></div>
+          <div class="layer top"></div>
+          <div class="layer middle"></div>
+          <div class="layer bottom"></div>
+          <div class="plate"></div>
+        </div>
+        <div class="tap-hint"><span>✦</span> KLIK KUE INI <span>✦</span></div>
+      </div>
+    </section>
+
+    <section id="envelopeScreen" class="screen">
+      <div class="burst-ring"></div>
+      <div class="envelope-stage">
+        <div class="sparkle-field"></div>
+        <div class="envelope" id="envelope">
+          <div class="env-back"></div>
+          <div class="env-front"></div>
+          <div class="env-flap"></div>
+          <div class="seal">♥</div>
+          <div class="env-glow"></div>
+        </div>
+        <div class="floating-hearts">♥　✦　♥　✧　♥</div>
+        <button class="primary-btn" id="openBtn">Buka surat <span>→</span></button>
+      </div>
+    </section>
+
+    <section id="letterScreen" class="screen">
+      <div class="letter-wrap">
+        <div class="letter-card">
+          <div class="letter-top">✦ A LETTER FOR YOU ✦</div>
+          <h2>Untuk seseorang<br>yang istimewa.</h2>
+          <div class="line"></div>
+          <p id="letterText"></p>
+          <div class="signature">— dari seseorang yang mendoakanmu ♡</div>
+          <button class="primary-btn small" id="finishBtn">Lanjutkan <span>→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="finalScreen" class="screen">
+      <div class="final-content">
+        <div class="crown">♔</div>
+        <div class="eyebrow">✦ TODAY IS YOUR DAY ✦</div>
+        <h2>Selamat<br><span>Ulang Tahun!</span></h2>
+        <p>Semoga langkahmu selalu dipenuhi hal-hal baik, orang-orang tulus, dan alasan baru untuk tersenyum.</p>
+        <div class="wish-list">
+          <div>♡ Semoga selalu bahagia</div>
+          <div>✦ Semoga semua impianmu tercapai</div>
+          <div>♡ Semoga dikelilingi orang-orang baik</div>
+        </div>
+        <button class="ghost-btn" id="replayBtn">↻ Putar lagi</button>
+      </div>
+    </section>
+  </main>
+
+  <canvas id="fx"></canvas>
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
